@@ -100,6 +100,7 @@ class ProfileFragment : Fragment(), MenuProvider {
             saveProfilePicture(binding.imageViewProfile)
             val name = binding.editTextName.text.toString()
             val email = binding.editTextEmailAddress.text.toString()
+
             // TODO: Save name and email
             with(sharedPref.edit()) {
                 putString(getString(R.string.name), name)
